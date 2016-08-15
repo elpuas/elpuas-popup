@@ -58,17 +58,13 @@ function ep_popup_meta_links( $links, $file ) {
 // create the links
 	if ( $file == $plugin ) {
 		
-		$supportlink = 'https://github.com/elpuas';
-		$donatelink = 'https://github.com/elpuas';
-		// $reviewlink = 'https://wordpress.org/support/view/plugin-reviews/alligator-popup?rate=5#postform';
+		$supportlink = 'https://github.com/elpuas/elpuas-popup';
 		$iconstyle = 'style="-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size: 14px;margin: 4px 0 -4px;"';
 		$twitterlink = 'http://twitter.com/3lpu4s';
 		
 		return array_merge( $links, array(
-			'<a href="' . $donatelink . '"><span class="dashicons dashicons-heart"' . $iconstyle . 'title="Donate"></span></a>',
 			'<a href="' . $supportlink . '"> <span class="dashicons dashicons-lightbulb" ' . $iconstyle . 'title="Support"></span></a>',
 			'<a href="' . $twitterlink . '"><span class="dashicons dashicons-twitter" ' . $iconstyle . 'title="Cubecolour on Twitter"></span></a>'
-			// '<a href="' . $reviewlink . '"><span class="dashicons dashicons-star-filled"' . $iconstyle . 'title="Review"></span></a>'
 		) );
 	}
 	
